@@ -1,12 +1,15 @@
-import logo from './logo.svg';
+/*
+  place-holder = https://via.placeholder.com/-x-
+*/
 import './App.css';
+import LoginPage from './components/login-page.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+
+        <LoginPage/>
+
     </div>
   );
 }
