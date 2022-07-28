@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
 
-        <LoginPage/>
+        <LoginPage className="loginArea" labelLogin="Usuário" labelPassword="Senha"/>
 
     </div>
   );

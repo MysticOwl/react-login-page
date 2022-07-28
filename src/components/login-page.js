@@ -1,16 +1,25 @@
-function LoginPage() {
+import PropTypes from'prop-types'
+function LoginPage({labelLogin,labelPassword}) {
 
     return(
-        <div>
+        <div className="loginArea">
             <h1>Bem-vindo!</h1>
             <img src="https://via.placeholder.com/200.png" alt="Logo.png"></img>
-                <label for="inputLogin">Login</label>
-                <input type="text" id="inputLogin" placeholder="Login"></input>
-                <label for="inputPassword">Senha</label>
-                <input type="password" placeholder="Senha"></input>
+                <div>
+                    <div><label htmlFor="inputLogin">{labelLogin}</label></div>
+                    <div><input type="text" id="inputLogin"></input></div>
+                </div>
+                <div>
+                    <div><label htmlFor="inputPassword">{labelPassword}</label></div>
+                    <div><input type="password" id="inputPassowrd"></input></div>
+                </div>
         </div>    
     )
 
+}
+LoginPage.propTypes={
+    labelLogin:PropTypes.string,
+    labelPassword:PropTypes.string,
 }
 
 export default LoginPage
